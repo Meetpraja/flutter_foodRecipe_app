@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_recipe/screens/categories.dart';
 import 'package:food_recipe/screens/meals.dart';
+import 'package:food_recipe/screens/tabs.dart';
 
 import 'data/dummy_data.dart';
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: theme,
-      home: const CategoriesScreen(),
+      home: const TabsScreen(),
     );
   }
 }

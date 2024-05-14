@@ -4,8 +4,12 @@ import 'package:food_recipe/models/category_model.dart';
 import 'package:food_recipe/widgets/category_grid_item.dart';
 import 'package:food_recipe/screens/meals.dart';
 
+import '../models/meal_model.dart';
+
 class CategoriesScreen extends StatelessWidget {
-  const CategoriesScreen({super.key});
+  const CategoriesScreen({super.key,required this.onToggleFavourite});
+
+  final void Function(Meal meal) onToggleFavourite;
 
   void _selectCatrgory(BuildContext context, Category category) {
     final filteredmeals = dummyMeals
@@ -16,7 +20,7 @@ class CategoriesScreen extends StatelessWidget {
       MaterialPageRoute(
         builder: (context) => MealsScreen(
           title: category.title,
-          meals: filteredmeals,
+          meals: filteredmeals, onToggleFavourite: onToggleFavourite,
         ),
       ),
     );
@@ -24,9 +28,6 @@ class CategoriesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('pick your food categore'),
-      ),
       body: GridView(
         padding: const EdgeInsets.all(10),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
