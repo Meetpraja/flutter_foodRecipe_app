@@ -1,16 +1,36 @@
-# food_recipe
+# food recipe Application
 
-A new Flutter project.
+a beautifully designed mobile application built with Flutter, 
+utilizing the Riverpod state management library and rich animations
+for an engaging user experience. This app serves as a comprehensive platform 
+for discovering, saving, and sharing delicious recipes from around the world.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+<h3>Discover Recipes</h3>
+<p>Browse through a vast collection of recipes with high-quality images and detailed instructions.</p>
+<h3>Favorites</h3>
+<p>Save your favorite recipes for quick access anytime.</p>
+<h3>Interactive Animations</h3>
+<p>Enjoy smooth and visually appealing animations that enhance the user experience.</p>
+<h3>State Management with Riverpod</h3>
+<p>Efficient and scalable state management using Riverpod for a robust and maintainable codebase.</p>
+<h3>Recipe Details</h3>
+<p>View comprehensive details for each recipe, including ingredients, step-by-step cooking instructions, and nutritional information.</p>
 
-A few resources to get you started if this is your first Flutter project:
+## Technologies Used
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<h3>Flutter</h3>
+<p>A powerful framework for building natively compiled applications for mobile, web, and desktop from a single codebase.</p>
+<h3>Riverpod</h3>
+<p>A reactive caching and data-binding framework that makes state management simple and scalable.</p>
+<h3>Flutter Animations</h3>
+<p>Custom animations for an engaging and intuitive user experience.</p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<h2>SnapShots</h2>
+
+<img src="snapshots/1.png"><img src="snapshots/2.png">
+<img src="snapshots/3.png"><img src="snapshots/4.png">
+<img src="snapshots/5.png"><img src="snapshots/6.png">
+<img src="snapshots/7.png"><img src="snapshots/8.png">
+<img src="snapshots/9.png">
