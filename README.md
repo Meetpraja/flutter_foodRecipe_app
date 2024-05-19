@@ -29,8 +29,8 @@ for discovering, saving, and sharing delicious recipes from around the world.
 
 <h2>SnapShots</h2>
 
-<img src="snapshots/1.png"><img src="snapshots/2.png">
-<img src="snapshots/3.png"><img src="snapshots/4.png">
-<img src="snapshots/5.png"><img src="snapshots/6.png">
-<img src="snapshots/7.png"><img src="snapshots/8.png">
-<img src="snapshots/9.png">
+<img src="snapshots/1.png" width="300"><img src="snapshots/2.png" width="300">
+<img src="snapshots/3.png" width="300"><img src="snapshots/4.png" width="300">
+<img src="snapshots/5.png" width="300"><img src="snapshots/6.png" width="300">
+<img src="snapshots/7.png" width="300"><img src="snapshots/8.png" width="300">
+<img src="snapshots/9.png" width="300">
