@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_recipe/screens/categories.dart';
-import 'package:food_recipe/screens/meals.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import 'package:food_recipe/screens/tabs.dart';
-
-import 'data/dummy_data.dart';
-
 
 final theme = ThemeData(
   useMaterial3: true,
@@ -15,7 +12,10 @@ final theme = ThemeData(
 );
 
 void main(){
-  runApp(const MyApp());
+  runApp(const ProviderScope(
+      child: MyApp(),
+  ),
+  );
 }
 
 class MyApp extends StatelessWidget {
