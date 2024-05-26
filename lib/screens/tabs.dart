@@ -5,7 +5,6 @@ import 'package:food_recipe/screens/categories.dart';
 import 'package:food_recipe/screens/filters.dart';
 import 'package:food_recipe/screens/meals.dart';
 import 'package:food_recipe/widgets/drawer.dart';
-import 'package:food_recipe/provider/meals_provider.dart';
 import 'package:food_recipe/provider/filters_provider.dart';
 
 import '../provider/favorite_provider.dart';
@@ -52,23 +51,7 @@ class _TabsScreenState extends ConsumerState<TabsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final meals = ref.watch(mealProvider);
-    final activeFilter = ref.watch(filtersProvider);
-    final availableList = meals.where((meal) {
-      if (activeFilter[Filters.glutenFree]! && !meal.isGlutenFree) {
-        return false;
-      }
-      if (activeFilter[Filters.lactoseFree]! && !meal.isLactoseFree) {
-        return false;
-      }
-      if (activeFilter[Filters.vegetarian]! && !meal.isVegetarian) {
-        return false;
-      }
-      if (activeFilter[Filters.vegan]! && !meal.isVegan) {
-        return false;
-      }
-      return true;
-    }).toList();
+    final availableList = ref.watch(filterMealsProvider);
 
     Widget activePage = CategoriesScreen(
       availableMeals: availableList,
